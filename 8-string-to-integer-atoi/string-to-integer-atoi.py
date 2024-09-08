@@ -1,6 +1,7 @@
+nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+
 def conv(x):
     b = ""
-    nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
     if x == "" or x[0] not in nums:
         return 0
     for i in range(len(x)):
@@ -33,7 +34,6 @@ class Solution:
         s = s.strip()
         if s == "":
             return 0
-        nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
         g = s[0]
         if g in nums:
             c = conv(s)
